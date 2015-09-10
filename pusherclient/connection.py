@@ -132,7 +132,7 @@ class Connection(Thread):
         self.needs_reconnect = True
 
     def _on_message(self, ws, message):
-        self.logger.info("Connection: Message - %s" % message)
+        #self.logger.info("Connection: Message - %s" % message)
 
         # Stop our timeout timer, since we got some data
         self._stop_timers()
